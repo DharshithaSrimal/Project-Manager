@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 22, 2017 at 08:01 AM
+-- Generation Time: Dec 09, 2017 at 05:28 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -58,7 +58,14 @@ CREATE TABLE IF NOT EXISTS `companies` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `companies_user_id_foreign` (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `companies`
+--
+
+INSERT INTO `companies` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES
+(1, 'Supersoft', 'Owned by Bill Mario', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
